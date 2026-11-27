@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Checkout repository
+      - name: Update approved direct submodules
         env:
           GH_TOKEN: ${{ github.token }}
           REPO: ${{ github.repository }}
@@ -26,10 +26,19 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B bot/submodule-updates
-          GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --remote --recursive
+          if [[ -f .gitmodules ]]; then
+            while IFS= read -r line; do
+              url="${line#*$'\t'}"
+              if [[ "$line" != *$'\t'* || ! "$url" =~ ^https://github\.com/FUREQ-DEVELOP/[A-Za-z0-9][A-Za-z0-9._-]{0,99}\.git$ ]]; then
+                echo "Unapproved submodule URL: $url" >&2
+                exit 1
+              fi
+            done < <(git config -f .gitmodules --get-regexp '^submodule\..*\.url$')
+          fi
+          GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --remote
           if [ -z "$(git status --porcelain)" ]; then echo "No submodule updates"; exit 0; fi
           git add .gitmodules
           git add -u
           git commit -m "chore: update submodules" || exit 0
           git push --force-with-lease origin bot/submodule-updates
-          gh pr create --repo "$REPO" --base main --head bot/submodule-updates --title "chore: update submodules" --body "Automated submodule update. Review the pinned commits and run integration checks before merging." || gh pr view bot/submodule-updates --repo "$REPO" >/dev/null
+          gh pr create --repo "$REPO" --base main --head bot/submodule-updates --title "chore: update submodules" --body "Automated direct submodule update. Review pinned commits; nested dependencies update through their own repository workflows." || gh pr view bot/submodule-updates --repo "$REPO" >/dev/null
