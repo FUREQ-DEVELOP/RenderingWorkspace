@@ -22,11 +22,12 @@ jobs:
           gh auth setup-git
           git clone "https://github.com/${REPO}.git" repo
           cd repo
+          git fetch origin bot/submodule-updates:refs/remotes/origin/bot/submodule-updates || true
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B bot/submodule-updates
           GIT_LFS_SKIP_SMUDGE=1 git submodule update --init --remote --recursive
-          if git diff --quiet -- .gitmodules "$(git ls-files -s | awk '$1 == 160000 {print $4}')"; then echo "No submodule updates"; exit 0; fi
+          if [ -z "$(git status --porcelain)" ]; then echo "No submodule updates"; exit 0; fi
           git add .gitmodules
           git add -u
           git commit -m "chore: update submodules" || exit 0
