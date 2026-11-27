@@ -1,0 +1,29 @@
+name: 機能提案
+description: 目的と受け入れ条件を記載します。
+title: "[機能提案] "
+labels: []
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 解決したい課題
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 提案内容
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 受け入れ条件
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 影響範囲
+    validations:
+      required: false

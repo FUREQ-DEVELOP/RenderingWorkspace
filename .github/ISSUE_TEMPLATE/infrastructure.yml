@@ -1,0 +1,23 @@
+name: 基盤タスク
+description: 開発基盤・自動化の変更を提案します。
+title: "[基盤タスク] "
+labels: []
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目的
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 対象と影響
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: 確認方法
+    validations:
+      required: true
