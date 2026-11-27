@@ -7,20 +7,17 @@ body:
     id: goal
     attributes:
       label: 目的・内容
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: scope
     attributes:
       label: 対象範囲
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: acceptance
     attributes:
       label: 成果・完了条件
-      render: textarea
     validations:
       required: true

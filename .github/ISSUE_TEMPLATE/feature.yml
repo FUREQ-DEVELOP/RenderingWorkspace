@@ -7,27 +7,23 @@ body:
     id: problem
     attributes:
       label: 解決したい課題
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: proposal
     attributes:
       label: 提案内容
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: acceptance
     attributes:
       label: 受け入れ条件
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: impact
     attributes:
       label: 影響範囲
-      render: textarea
     validations:
       required: false

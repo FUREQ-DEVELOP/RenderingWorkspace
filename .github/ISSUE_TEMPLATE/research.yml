@@ -7,20 +7,17 @@ body:
     id: question
     attributes:
       label: 調査する問い
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: scope
     attributes:
       label: 調査範囲
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: deliverable
     attributes:
       label: 成果物
-      render: textarea
     validations:
       required: true

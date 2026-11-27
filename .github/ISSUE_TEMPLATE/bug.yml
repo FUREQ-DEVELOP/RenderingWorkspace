@@ -7,28 +7,24 @@ body:
     id: summary
     attributes:
       label: 概要
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: repro
     attributes:
       label: 再現手順
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: expected
     attributes:
       label: 期待する動作
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: actual
     attributes:
       label: 実際の動作
-      render: textarea
     validations:
       required: true
   - type: input

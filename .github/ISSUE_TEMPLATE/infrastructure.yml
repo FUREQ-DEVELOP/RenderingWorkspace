@@ -7,20 +7,17 @@ body:
     id: goal
     attributes:
       label: 目的
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: scope
     attributes:
       label: 対象と影響
-      render: textarea
     validations:
       required: true
   - type: textarea
     id: verification
     attributes:
       label: 確認方法
-      render: textarea
     validations:
       required: true
