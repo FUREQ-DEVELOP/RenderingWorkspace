@@ -1,0 +1,40 @@
+name: 不具合報告
+description: 不具合の再現に必要な情報を共有します。
+title: "[不具合報告] "
+labels: []
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: 概要
+      render: textarea
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 再現手順
+      render: textarea
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 期待する動作
+      render: textarea
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 実際の動作
+      render: textarea
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 環境・バージョン
+      placeholder: 記入してください
+    validations:
+      required: false

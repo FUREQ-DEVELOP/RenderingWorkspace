@@ -1,0 +1,19 @@
+name: ドキュメントタスク
+description: 文書の変更を提案します。
+title: "[ドキュメントタスク] "
+labels: []
+body:
+  - type: input
+    id: target
+    attributes:
+      label: 対象文書
+      placeholder: 記入してください
+    validations:
+      required: true
+  - type: textarea
+    id: change
+    attributes:
+      label: 必要な変更
+      render: textarea
+    validations:
+      required: true

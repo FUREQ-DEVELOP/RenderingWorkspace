@@ -1,0 +1,6 @@
+[submodule "SDK/RenderingLibrary"]
+	path = SDK/RenderingLibrary
+	url = https://github.com/FUREQ-DEVELOP/RenderingLibrary.git
+[submodule "Tools/DevelopmentTools"]
+	path = Tools/DevelopmentTools
+	url = https://github.com/FUREQ-DEVELOP/DevelopmentTools.git

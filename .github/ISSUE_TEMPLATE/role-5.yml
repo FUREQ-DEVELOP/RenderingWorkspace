@@ -1,0 +1,26 @@
+name: Rendering Bug
+description: Rendering Bugの内容を記載します。
+title: "[Rendering Bug] "
+labels: []
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: 目的・内容
+      render: textarea
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 対象範囲
+      render: textarea
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: 成果・完了条件
+      render: textarea
+    validations:
+      required: true

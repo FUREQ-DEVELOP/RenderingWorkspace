@@ -1,0 +1,26 @@
+name: 調査タスク
+description: 調査の問いと成果物を記載します。
+title: "[調査タスク] "
+labels: []
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: 調査する問い
+      render: textarea
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 調査範囲
+      render: textarea
+    validations:
+      required: true
+  - type: textarea
+    id: deliverable
+    attributes:
+      label: 成果物
+      render: textarea
+    validations:
+      required: true
