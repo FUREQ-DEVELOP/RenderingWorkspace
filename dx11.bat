@@ -1,0 +1,1 @@
+.\out\vs2022\x64\Debug\ATMERA.Triangle.exe --backend d3d11

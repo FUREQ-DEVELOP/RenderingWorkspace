@@ -1,0 +1,3 @@
+# Project format
+
+The optional Module Framework binds module installation and dependency resolution to one project directory. Its runtime restricts registered DLL paths to that project's `Modules/` subtree and resolves enablement/dependencies per host instance. `project.atmera.json` was used by the former Studio project manager, which has been removed; Studio no longer creates or opens project manifests. A future package-management feature may define a manifest and `modules.lock.json` with exact module versions and content hashes. Lockfile parsing and package installation are not implemented yet. Basic ATMERA rendering and Studio debugging require neither a project format nor the Module Framework.

@@ -1,0 +1,29 @@
+[
+  {
+    "Name": "ATMERA Studio",
+    "Projects": [
+      {
+        "Path": "Studio\\ATMERA.Studio\\ATMERA.Studio.csproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "ATMERA Triangle (D3D11)",
+    "Projects": [
+      {
+        "Path": "Native\\ATMERA.Triangle.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  },
+  {
+    "Name": "ATMERA Triangle (D3D12)",
+    "Projects": [
+      {
+        "Path": "Native\\ATMERA.Triangle.D3D12.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

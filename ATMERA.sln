@@ -1,0 +1,96 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36603.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ATMERA.Studio", "Studio\ATMERA.Studio\ATMERA.Studio.csproj", "{818A4BBF-626E-4772-A8CF-6850EB1AFD4A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.ModuleFramework", "Native\ATMERA.ModuleFramework.vcxproj", "{4621A0C4-44B5-438F-BA84-65F79D10DF2C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.Graphics", "Native\ATMERA.Graphics.vcxproj", "{64F1D1BB-F7B2-42C9-86ED-1C083271F7DD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.Bloom", "Native\ATMERA.Bloom.vcxproj", "{D9E17370-5300-498F-BAE7-CECF768A78A6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.TestPlugin", "Native\ATMERA.TestPlugin.vcxproj", "{F795B272-F05E-45BC-B9CB-38CC258E6652}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.SecondPlugin", "Native\ATMERA.SecondPlugin.vcxproj", "{BB624281-568B-4A35-837A-6AA82E887819}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.KernelTests", "Native\ATMERA.KernelTests.vcxproj", "{A660F6CB-D27C-40F4-8967-989943E01C86}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.ModuleTool", "Native\ATMERA.ModuleTool.vcxproj", "{B3F42295-AE44-4BE9-AB1F-F36B5923A614}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.D3D11", "Native\ATMERA.D3D11.vcxproj", "{0B8FA92C-0507-47DD-BD33-9556E39F23A7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.D3D12", "Native\ATMERA.D3D12.vcxproj", "{FBDA8D75-F905-43BE-95D2-006CF0A6DD78}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.Triangle", "Native\ATMERA.Triangle.vcxproj", "{58AB73C3-E88A-4F89-8AA6-7E927BE0A22D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.Triangle.D3D12", "Native\ATMERA.Triangle.D3D12.vcxproj", "{CA203946-33A3-4AF2-BBCE-CE5508866A4D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ATMERA.ExternalConsumer", "Native\ATMERA.ExternalConsumer.vcxproj", "{C8795829-72DC-44A2-AFD1-AB0B921CCAE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{818A4BBF-626E-4772-A8CF-6850EB1AFD4A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{818A4BBF-626E-4772-A8CF-6850EB1AFD4A}.Debug|x64.Build.0 = Debug|Any CPU
+		{818A4BBF-626E-4772-A8CF-6850EB1AFD4A}.Release|x64.ActiveCfg = Release|Any CPU
+		{818A4BBF-626E-4772-A8CF-6850EB1AFD4A}.Release|x64.Build.0 = Release|Any CPU
+		{4621A0C4-44B5-438F-BA84-65F79D10DF2C}.Debug|x64.ActiveCfg = Debug|x64
+		{4621A0C4-44B5-438F-BA84-65F79D10DF2C}.Debug|x64.Build.0 = Debug|x64
+		{4621A0C4-44B5-438F-BA84-65F79D10DF2C}.Release|x64.ActiveCfg = Release|x64
+		{4621A0C4-44B5-438F-BA84-65F79D10DF2C}.Release|x64.Build.0 = Release|x64
+		{64F1D1BB-F7B2-42C9-86ED-1C083271F7DD}.Debug|x64.ActiveCfg = Debug|x64
+		{64F1D1BB-F7B2-42C9-86ED-1C083271F7DD}.Debug|x64.Build.0 = Debug|x64
+		{64F1D1BB-F7B2-42C9-86ED-1C083271F7DD}.Release|x64.ActiveCfg = Release|x64
+		{64F1D1BB-F7B2-42C9-86ED-1C083271F7DD}.Release|x64.Build.0 = Release|x64
+		{D9E17370-5300-498F-BAE7-CECF768A78A6}.Debug|x64.ActiveCfg = Debug|x64
+		{D9E17370-5300-498F-BAE7-CECF768A78A6}.Debug|x64.Build.0 = Debug|x64
+		{D9E17370-5300-498F-BAE7-CECF768A78A6}.Release|x64.ActiveCfg = Release|x64
+		{D9E17370-5300-498F-BAE7-CECF768A78A6}.Release|x64.Build.0 = Release|x64
+		{F795B272-F05E-45BC-B9CB-38CC258E6652}.Debug|x64.ActiveCfg = Debug|x64
+		{F795B272-F05E-45BC-B9CB-38CC258E6652}.Debug|x64.Build.0 = Debug|x64
+		{F795B272-F05E-45BC-B9CB-38CC258E6652}.Release|x64.ActiveCfg = Release|x64
+		{F795B272-F05E-45BC-B9CB-38CC258E6652}.Release|x64.Build.0 = Release|x64
+		{BB624281-568B-4A35-837A-6AA82E887819}.Debug|x64.ActiveCfg = Debug|x64
+		{BB624281-568B-4A35-837A-6AA82E887819}.Debug|x64.Build.0 = Debug|x64
+		{BB624281-568B-4A35-837A-6AA82E887819}.Release|x64.ActiveCfg = Release|x64
+		{BB624281-568B-4A35-837A-6AA82E887819}.Release|x64.Build.0 = Release|x64
+		{A660F6CB-D27C-40F4-8967-989943E01C86}.Debug|x64.ActiveCfg = Debug|x64
+		{A660F6CB-D27C-40F4-8967-989943E01C86}.Debug|x64.Build.0 = Debug|x64
+		{A660F6CB-D27C-40F4-8967-989943E01C86}.Release|x64.ActiveCfg = Release|x64
+		{A660F6CB-D27C-40F4-8967-989943E01C86}.Release|x64.Build.0 = Release|x64
+		{B3F42295-AE44-4BE9-AB1F-F36B5923A614}.Debug|x64.ActiveCfg = Debug|x64
+		{B3F42295-AE44-4BE9-AB1F-F36B5923A614}.Debug|x64.Build.0 = Debug|x64
+		{B3F42295-AE44-4BE9-AB1F-F36B5923A614}.Release|x64.ActiveCfg = Release|x64
+		{B3F42295-AE44-4BE9-AB1F-F36B5923A614}.Release|x64.Build.0 = Release|x64
+		{0B8FA92C-0507-47DD-BD33-9556E39F23A7}.Debug|x64.ActiveCfg = Debug|x64
+		{0B8FA92C-0507-47DD-BD33-9556E39F23A7}.Debug|x64.Build.0 = Debug|x64
+		{0B8FA92C-0507-47DD-BD33-9556E39F23A7}.Release|x64.ActiveCfg = Release|x64
+		{0B8FA92C-0507-47DD-BD33-9556E39F23A7}.Release|x64.Build.0 = Release|x64
+		{FBDA8D75-F905-43BE-95D2-006CF0A6DD78}.Debug|x64.ActiveCfg = Debug|x64
+		{FBDA8D75-F905-43BE-95D2-006CF0A6DD78}.Debug|x64.Build.0 = Debug|x64
+		{FBDA8D75-F905-43BE-95D2-006CF0A6DD78}.Release|x64.ActiveCfg = Release|x64
+		{FBDA8D75-F905-43BE-95D2-006CF0A6DD78}.Release|x64.Build.0 = Release|x64
+		{58AB73C3-E88A-4F89-8AA6-7E927BE0A22D}.Debug|x64.ActiveCfg = Debug|x64
+		{58AB73C3-E88A-4F89-8AA6-7E927BE0A22D}.Debug|x64.Build.0 = Debug|x64
+		{58AB73C3-E88A-4F89-8AA6-7E927BE0A22D}.Release|x64.ActiveCfg = Release|x64
+		{58AB73C3-E88A-4F89-8AA6-7E927BE0A22D}.Release|x64.Build.0 = Release|x64
+		{CA203946-33A3-4AF2-BBCE-CE5508866A4D}.Debug|x64.ActiveCfg = Debug|x64
+		{CA203946-33A3-4AF2-BBCE-CE5508866A4D}.Debug|x64.Build.0 = Debug|x64
+		{CA203946-33A3-4AF2-BBCE-CE5508866A4D}.Release|x64.ActiveCfg = Release|x64
+		{CA203946-33A3-4AF2-BBCE-CE5508866A4D}.Release|x64.Build.0 = Release|x64
+		{C8795829-72DC-44A2-AFD1-AB0B921CCAE7}.Debug|x64.ActiveCfg = Debug|x64
+		{C8795829-72DC-44A2-AFD1-AB0B921CCAE7}.Debug|x64.Build.0 = Debug|x64
+		{C8795829-72DC-44A2-AFD1-AB0B921CCAE7}.Release|x64.ActiveCfg = Release|x64
+		{C8795829-72DC-44A2-AFD1-AB0B921CCAE7}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C4523B64-E8F2-4206-83AE-F93AE607082A}
+	EndGlobalSection
+EndGlobal

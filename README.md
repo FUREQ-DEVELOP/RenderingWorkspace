@@ -6,7 +6,7 @@
 
 RenderingLibraryの開発、動作検証、性能計測および内部技術資料を一元管理します。
 
-## Submodule構成（予定）
+## Submodule構成
 
 | Path | Repository |
 | --- | --- |
@@ -27,7 +27,15 @@ Rendering-Team
 
 ## 開発状況
 
-開発基盤構築中。Submoduleは未登録です。
+ATMERA の変更可能なソース、Native、Studio、サンプル、テスト、Visual Studio ソリューションはこのリポジトリで開発します。ルートの `ATMERA.sln` からまとめてビルドできます。`SDK/RenderingLibrary` は配布先リポジトリへの既存サブモジュールであり、ビルドはその内容を必要としません。完成した SDK と配布物だけを RenderingLibrary に公開します。現在の機能と未完了項目は [Roadmap](Docs/ROADMAP.md) を参照してください。
+
+## ATMERA の確認手順
+
+1. `git clone --recurse-submodules https://github.com/FUREQ-DEVELOP/RenderingWorkspace.git` で取得します。
+2. Visual Studio 2022 で `ATMERA.sln` を開き、`Debug|x64` でビルドします。コマンドラインでは MSBuild に `/restore /p:Configuration=Debug /p:Platform=x64` を指定します。
+3. `./Tools/Test.ps1 -Configuration Debug` を実行します。
+
+既存のチェックアウトでは `git submodule update --init --recursive` で SDK を取得できます。Studio と Triangle の起動設定は `ATMERA.slnLaunch` にあります。
 
 ## 利用方法
 
