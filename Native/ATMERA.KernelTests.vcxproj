@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64"><Configuration>Debug</Configuration><Platform>x64</Platform></ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64"><Configuration>Release</Configuration><Platform>x64</Platform></ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals"><VCProjectVersion>17.0</VCProjectVersion><Keyword>Win32Proj</Keyword><ProjectGuid>{A660F6CB-D27C-40F4-8967-989943E01C86}</ProjectGuid><RootNamespace>ATMERA.KernelTests</RootNamespace><WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>true</UseDebugLibraries><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet></PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration"><ConfigurationType>Application</ConfigurationType><UseDebugLibraries>false</UseDebugLibraries><PlatformToolset>v143</PlatformToolset><CharacterSet>Unicode</CharacterSet><WholeProgramOptimization>true</WholeProgramOptimization></PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup><OutDir>$(MSBuildThisFileDirectory)..\out\vs2022\$(Platform)\$(Configuration)\</OutDir><IntDir>$(MSBuildThisFileDirectory)..\out\vs2022\obj\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir></PropertyGroup>
+  <ItemDefinitionGroup><ClCompile><WarningLevel>Level4</WarningLevel><SDLCheck>true</SDLCheck><LanguageStandard>stdcpp20</LanguageStandard><ConformanceMode>true</ConformanceMode><AdditionalIncludeDirectories>$(MSBuildThisFileDirectory)..\SDK\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories></ClCompile></ItemDefinitionGroup>
+  <ItemGroup><ClCompile Include="..\Tests\KernelTests.cpp" /><ClInclude Include="..\SDK\Include\ATMERA\Engine.hpp" /><ClInclude Include="..\SDK\Include\ATMERA\PluginABI.h" /><ClInclude Include="..\SDK\Include\ATMERA\DependencyResolver.hpp" /><ClInclude Include="..\SDK\Include\ATMERA\EventBus.hpp" /><ClInclude Include="..\SDK\Include\ATMERA\ServiceRegistry.hpp" /></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="ATMERA.ModuleFramework.vcxproj"><Project>{4621A0C4-44B5-438F-BA84-65F79D10DF2C}</Project><ReferenceOutputAssembly>false</ReferenceOutputAssembly></ProjectReference>
+    <ProjectReference Include="ATMERA.TestPlugin.vcxproj"><Project>{F795B272-F05E-45BC-B9CB-38CC258E6652}</Project><ReferenceOutputAssembly>false</ReferenceOutputAssembly><LinkLibraryDependencies>false</LinkLibraryDependencies></ProjectReference>
+    <ProjectReference Include="ATMERA.SecondPlugin.vcxproj"><Project>{BB624281-568B-4A35-837A-6AA82E887819}</Project><ReferenceOutputAssembly>false</ReferenceOutputAssembly><LinkLibraryDependencies>false</LinkLibraryDependencies></ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
